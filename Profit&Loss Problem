@@ -1,0 +1,46 @@
+/*h1 using if statement*/
+#include<stdio.h>
+int main()
+{
+    int cost,qty,amo;
+    float dis,net_amo,save;
+    printf("Enter cost of product : ");
+    scanf("%d",&cost);
+    printf("Enter quantity of product : ");
+    scanf("%d",&qty);
+amo=cost*qty;
+if(amo<3000)
+{
+    dis=amo*0.1;
+    save=dis;
+    net_amo=amo-dis;
+    printf("You save on MRP is %.2f\n",save);
+    printf("Net amount to be paid is %.2f\n",net_amo);
+}
+if(amo>3000 && amo<5000)
+{   
+    dis=amo*0.2;
+    save=dis;
+    net_amo=amo-dis;
+    printf("You save on MRP is %.2f\n",save);
+    printf("Net amount to be paid is %.2f\n",net_amo);
+}
+if(amo>5000 && amo<8000)
+{
+    dis=amo*0.3;
+    save=dis;
+    net_amo=amo-dis;
+    printf("You save on MRP is %.2f\n",save);
+    printf("Net amount to be paid is %.2f\n",net_amo);
+}
+if(amo>8000)
+{
+    dis=amo*.4;
+    save=dis;
+    net_amo=amo-dis;
+    printf("You save on MRP is %.2f\n",save);
+    printf("Net amount to be paid is %.2f\n",net_amo);
+}
+return 0;
+
+}
