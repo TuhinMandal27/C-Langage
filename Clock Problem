@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    int hour,min,sec;
+    printf("Enter hour according to 24 hrs : ");
+    scanf("%d",&hour);
+    printf("Enter Minutes : ");
+    scanf("%d",&min);
+    printf("Enter Seconds : ");
+    scanf("%d",&sec);
+    if(hour > 24)
+    {
+        printf("There is only 24hrs in a day");
+    }
+    if(hour<12)
+    {
+        printf("Time According To 12 Hours Clock Is %d:%d:%d AM",hour,min,sec);
+    }
+    if(hour>=12 && hour<24)
+    {
+        printf("Time According TO 12 Hours Clock Is %d:%d:%d PM",hour-12,min,sec);
+    }
+    return 0;
+}
