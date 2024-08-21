@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() 
+{
+    int age;
+    char gender;
+
+    printf("Enter Age: ");
+    scanf("%d", &age);
+
+    printf("Enter Gender (M/F): ");
+    scanf(" %c", &gender);
+
+    if (age >= 60 && (gender == 'M' || gender == 'm')) 
+    {
+        printf("He is Retired");
+    } 
+    else if (age >= 56 && (gender == 'F' || gender == 'f')) 
+    {
+        printf("She is Retired");
+    } 
+    else if (age < 60 && (gender == 'M' || gender == 'm')) 
+    {
+        printf("He is not Retired");
+    } 
+    else if (age < 56 && (gender == 'F' || gender == 'f')) 
+    {
+        printf("She is not Retired");
+    }
+
+    return 0;
+}
