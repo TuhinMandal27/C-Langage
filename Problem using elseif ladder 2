@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int rank;
+    float per;
+    printf("Enter percentage marks : ");
+    scanf("%f",&per);
+    printf("Enter Your CET rank : ");
+    scanf("%d",&rank);
+    if(per>=60 && rank<=500)
+    {
+        printf("Congrats you got admission");
+    }
+    else
+    {   
+        printf("Try next time");
+    } 
+    return 0;
+
+}
