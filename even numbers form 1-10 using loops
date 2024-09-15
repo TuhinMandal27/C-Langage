@@ -1,0 +1,12 @@
+/* Write a promgram to find even numbers form 1-10 using loops*/
+#include<stdio.h>
+int main()
+{
+    int num,sum=0;
+    for(num=2;num<=10;num+=2)
+    {
+        sum+=num;
+    }
+    printf("Sum is %d ",sum);
+    return 0;
+}
