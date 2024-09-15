@@ -1,0 +1,24 @@
+/*Find three digit armstron number */
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int num,a,d,sum=0;
+    printf("Enter a number :");
+    scanf("%d",&a);
+    num=a;
+    while(num!=0)
+    {
+        d=num%10;
+        sum=sum + d*d*d;
+        num=num/10;
+    }
+    if(a==sum)
+    {
+        printf("It's an armstrong number");
+    }
+    else{
+        printf("It's not an armstrong number");
+    }
+    return 0;
+}
